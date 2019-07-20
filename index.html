@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<meta name="viewport" content="width-device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="index.css">
+<link rel="stylesheet" href="css/960.css">
+<link rel="stylesheet" href="css/reset.css">
+<body>
+	<header>
+<nav class="navigation">
+  <a class="linkCss" href="#home">Home</a>
+  <a class="linkCss" href="#about">About</a>
+  <a class="log" class="linkCss" href="#login">Login</a>
+  <a class="log" class="linkCss" href="#register">Register</a> 
+</nav>
+</header>
+	<section class="sec">
+	<form>
+		Search Availability:
+	<input type="text" name="search" placeholder="Enter Your Hotel">
+	<button class="submit">Search</button>
+	</form>
+	</section>
+	<section>
+  <img src="image.jpeg" alt="hotel" width="100%">
+  <h1>About</h1>
+  <p>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<p>
+</section>
+<!-- <section class="column">
+	<img src="card1.jpg" alt="single room" width="400%">
+	<section>
+		<h3></h3>
+	</section>
+</section> -->
+<section class="our">
+	<h3>Our Hotels</h3>
+	<h6>You can find our hotels everywhere in the world</h6>
+	<img src="london.jpg" alt="london">
+	
+</section>
+<div class="container_12">
+	<div class="grid_12">
+		<h1>Room</h1>
+		</div>
+	<div class="grid_4">
+		<img src="newyork.jpg" alt="newyork">
+	</div>
+	<div class="grid_4">
+		<p>The first div is your container, what your content will be stored in. By defining it's class as "container_12", you're saying: "I want this container to have a 12 column grid" (The same practice applies when using a 16 and 24 column grid).
+
+Now that you've defined the container as a 12 column layout, you begin to structure your site in such a way that it fits within the layout. If you look at the next div elements in the hierarchy (as noted by the tabs), you'll see the syntax for their definitions. "Grid_7" and "grid_3" are easy enough to understand: you're saying that this div element is going to take up X number of columns. However, 7+3 = 10 < 12, which means you'll have 2 empty columns at the end of the container, right? Well, this is where the prefix and suffix aspect of the class definition come into play. With a class definition of "grid_x suffix_y", you're saying: "I want this div to take up X columns, and for there to be Y number of empty columns after it." (This also applies to prefix). So, since "Grid_7" has a prefix of 1, and "Grid_3" has a suffix of 1, 7+3+1+1 = 12!</p>
+	</div>
+	<div class="grid_4">
+		<p>The first div is your container, what your content will be stored in. By defining it's class as "container_12", you're saying: "I want this container to have a 12 column grid" (The same practice applies when using a 16 and 24 column grid).
+
+Now that you've defined the container as a 12 column layout, you begin to structure your site in such a way that it fits within the layout. If you look at the next div elements in the hierarchy (as noted by the tabs), you'll see the syntax for their definitions. "Grid_7" and "grid_3" are easy enough to understand: you're saying that this div element is going to take up X number of columns. However, 7+3 = 10 < 12, which means you'll have 2 empty columns at the end of the container, right? Well, this is where the prefix and suffix aspect of the class definition come into play. With a class definition of "grid_x suffix_y", you're saying: "I want this div to take up X columns, and for there to be Y number of empty columns after it." (This also applies to prefix). So, since "Grid_7" has a prefix of 1, and "Grid_3" has a suffix of 1, 7+3+1+1 = 12!</p>
+	</div>
+</div>
+
+</body>
+</html>
