@@ -1,3 +1,8 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+/*body{
+	background-image: url("background.png");
+}*/
 
 .log{
 	float: right;
@@ -6,11 +11,16 @@
 	padding: 5px;
 	color: white;
 }
-
+.log:hover:not(.active) {
+  background-color: #333;
+}
 .navigation {
 	display: block;
 	background-color: black;
 	padding: 20px;
+}
+.linkCss:hover:not(.active) {
+  background-color: #333;
 }
 
 .linkCss{
@@ -24,20 +34,50 @@ input{
 	border-radius: 4px;
 }
 
-.submit{
-	padding: 5px;
+body{
+  background: #f2f2f2;
+  font-family: 'Open Sans', sans-serif;
 }
 
-h6{
-	font-size: 40px;
+.search {
+  position: relative;
+  display: flex;
+  margin-left: 615px;
+  padding: 10px 0 10px 0;
 }
 
-.sec{
-	text-align: center;
+.searchTerm {
+  width: 200px;
+  float: left;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 43% !important;
+  border-radius: 8px;
+  outline: none;
+  color: #9DBFAF;
+  margin-left: 10px;
 }
 
-h1{
-	font-size: 40px;
+.searchTerm:focus{
+  color: #00B4CC;
+}
+
+.searchButton {
+  width: 8%;
+  height: 30px;
+  border: 1px solid #00B4CC;
+  background: #15363B4D;
+  text-align: center;
+  color: black;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 20px;
+  margin-left: 15px;
+}
+#avail{
+	width 25%;
+	float: left;
 }
 /*.column{
 	-moz-column-count: 3;
@@ -50,15 +90,162 @@ h1{
 	
 	
 }*/
-h3{
-	font-size: 30px;
-	margin: 10px 0;
-} 
-.our{
-	font-size: 30px;
-	margin: 10px 0;
-}
-h6{
+.about{
 	font-size: 20px;
-	margin: 10px 0;
+}
+#about{
+	font-size: 30px;
+	text-align: center;
+}
+.ourhotels{
+	font-size: 20px;
+	text-align: center;
+}
+#ourhotels{
+	font-size: 30px;
+}
+.column {
+  float: left;
+  width: 32%;
+  padding: 10px;
+  height: 300px;
+
+}
+	.row:after {
+  content: "";
+  display: table;
+  clear: both;
+  box-sizing: border-box;
+
+}
+#abt{
+padding: 20px;
+margin-left: 180px;
+margin-right: 180px;
+}
+/*.displaytext{
+position: absolute;
+left: 0;
+bottom: 0;
+}*/
+.email{
+	margin: 32px 0;
+	background-color: black;
+	height: 205px;
+	margin-top: 45px;
+	color: white;
+
+}
+#email{
+font-size: 40px;
+font-weight: 400;
+margin: 10px 0;
+}
+#email1{
+	margin-left: 5px;
+	font-size: 16px;
+	margin-top: -8px;
+}
+.inputemail{
+padding: 8px;
+display: block;
+border: none;
+border-bottom: 1px solid #ccc;
+width: 100%;
+margin-left: 5px;
+margin-top: 9px;
+}
+#label{
+	margin-left: 5px;
+	font-size: 17px;
+}
+.button{
+background-color: #f44336 !important;
+margin-top: 16px;
+border: none;
+display: inline-block;
+padding: 8px 16px;
+vertical-align: middle;
+overflow: hidden;
+text-decoration: none;
+color: inherit;
+background-color: inherit;
+text-align: center;
+cursor: pointer;
+white-space: nowrap;
+margin-left: 5px;
+}
+
+.contact{
+	font-size: 35px;
+	margin: 10px 900px 0 10px;
+	font-weight: 400;
+}
+#contact{
+	font-size: 20px;
+	margin: 10px 0 0 5px;
+}
+.add{
+	font-size: 20px;
+	margin: 30px 0 0 20px;
+}
+.name{
+	padding: 16px 0 16px 0;
+	border: 1px solid #ccc !important;
+	padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+	display: block;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	margin: 14px 0 0 5px;
+}
+.formemail{
+	padding: 16px 0 16px 0;
+	border: 1px solid #ccc !important;
+	padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+	display: block;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	margin: 14px 0 0 5px;
+}
+.message{
+	padding: 16px 0 16px 0;
+	border: 1px solid #ccc !important;
+	padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+	display: block;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+	margin: 14px 0 0 5px;
+}
+.buttonform{
+	color: white;
+	background-color: black;
+	padding: 12px 24px !important;
+}
+.footer{
+	background-color: black;
+	color: white;
+	padding: 32px;
+	text-align: center;
+	padding: 32px 0 32px 0;
+	margin-top: 16px;
+	display: block;
+	box-sizing: inherit;
+	height: 100px;
+	font-size: 25px;
+}
+#footer{
+	font-size: 18px;
+	margin-top: 20px;
+}
+#footer1{
+	font-size: 18px;
 }

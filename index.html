@@ -14,48 +14,86 @@
   <a class="log" class="linkCss" href="#register">Register</a> 
 </nav>
 </header>
-	<section class="sec">
-	<form>
-		Search Availability:
-	<input type="text" name="search" placeholder="Enter Your Hotel">
-	<button class="submit">Search</button>
-	</form>
-	</section>
-	<section>
-  <img src="image.jpeg" alt="hotel" width="100%">
-  <h1>About</h1>
-  <p>Our hotel is one of a kind. It is truely amazing. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.<p>
-</section>
-<!-- <section class="column">
-	<img src="card1.jpg" alt="single room" width="400%">
-	<section>
-		<h3></h3>
-	</section>
-</section> -->
-<section class="our">
-	<h3>Our Hotels</h3>
-	<h6>You can find our hotels everywhere in the world</h6>
-	<img src="london.jpg" alt="london">
+<div class="search">
+	<p>Search Availability:</p>
+	<input type="text" class="searchTerm" placeholder="Search...">
+	<button type="submit" class="searchButton">Search</button>
+</div>
+	<!-- <section class="search">
+
+		<p id="avail">Search Availability:<p>
+	<input type="text" name="searchTerm" placeholder="What are you looking for?">
+	<button type="submit" class="searchButton">Search</button>
+	
+	</section> -->
+	<img src="image.jpeg" alt="hotel" width="100%"><br><br>
+	<section class="about">
+  <h1 id="about">About</h1>
+  <p id="abt">Our hotel is one of a kind. It is truely amazing. Our hotel offers the guests an unforgettable stay with his warm hospitality, unique service quality in the magical nature of mediterranean.  Our 5-star hotel close to the historic peninsula of Side and Manavgat, just 12 km away, with his 462 rooms capacity,  beachfront location and most importantly with his very friendly service was placed in the short time in hearts of many guests. Fine sand and shallow beach awarded with international prize 'Blue Flag' is waiting just for you.
+Unlimited hospitality and perfect service awaits you from the moment you step in the Side Star Resort. Full 12 months `All Inclusive' accommodation at your service.
+Our rooms which have great views have all the comforts that our guests may need. Due to the different expectations, different types of rooms were designed like suites, family rooms and standart rooms..<p>
+</section><br><br>
+
+<section  class="ourhotels">
+	<h1 id="ourhotels">Our Hotels</h1>
+	<p>You can find our hotels everywhere in the world</p>
+	
 	
 </section>
-<div class="container_12">
-	<div class="grid_12">
-		<h1>Room</h1>
-		</div>
-	<div class="grid_4">
-		<img src="newyork.jpg" alt="newyork">
-	</div>
-	<div class="grid_4">
-		<p>The first div is your container, what your content will be stored in. By defining it's class as "container_12", you're saying: "I want this container to have a 12 column grid" (The same practice applies when using a 16 and 24 column grid).
 
-Now that you've defined the container as a 12 column layout, you begin to structure your site in such a way that it fits within the layout. If you look at the next div elements in the hierarchy (as noted by the tabs), you'll see the syntax for their definitions. "Grid_7" and "grid_3" are easy enough to understand: you're saying that this div element is going to take up X number of columns. However, 7+3 = 10 < 12, which means you'll have 2 empty columns at the end of the container, right? Well, this is where the prefix and suffix aspect of the class definition come into play. With a class definition of "grid_x suffix_y", you're saying: "I want this div to take up X columns, and for there to be Y number of empty columns after it." (This also applies to prefix). So, since "Grid_7" has a prefix of 1, and "Grid_3" has a suffix of 1, 7+3+1+1 = 12!</p>
-	</div>
-	<div class="grid_4">
-		<p>The first div is your container, what your content will be stored in. By defining it's class as "container_12", you're saying: "I want this container to have a 12 column grid" (The same practice applies when using a 16 and 24 column grid).
-
-Now that you've defined the container as a 12 column layout, you begin to structure your site in such a way that it fits within the layout. If you look at the next div elements in the hierarchy (as noted by the tabs), you'll see the syntax for their definitions. "Grid_7" and "grid_3" are easy enough to understand: you're saying that this div element is going to take up X number of columns. However, 7+3 = 10 < 12, which means you'll have 2 empty columns at the end of the container, right? Well, this is where the prefix and suffix aspect of the class definition come into play. With a class definition of "grid_x suffix_y", you're saying: "I want this div to take up X columns, and for there to be Y number of empty columns after it." (This also applies to prefix). So, since "Grid_7" has a prefix of 1, and "Grid_3" has a suffix of 1, 7+3+1+1 = 12!</p>
-	</div>
+<div class="row">
+	<div class="column">
+    <img src="london.jpg" alt="london" width="90%">
+    <!-- <span class="diplaytext">New York</span> -->
+  </div>
+  <div class="column">
+    <img src="card1.jpg" alt="single room" width="90%">
+  </div>
+  <div class="column">
+    <img src="newyork.jpg" alt="newyork" width="85%">
+  </div>
 </div>
-
+<div>
+<section class="email">
+	<h2 id="email">Get the best offer first!</h2>
+	<p id="email1">Join our newsletter.</p>
+	<label id="label">E-mail</label>
+	<input class="inputemail" type="text" placeholder="Your email address">
+	<button class="button" type="button">Subscribe</button>
+</section>
+</div>
+<div>
+	<section class="contact">
+		<h2>Contact</h2>
+		<p id="contact">If you have any questions, do not hesitate to ask us.</p>
+		<section class="add">
+		<p>Delhi, India</p>
+		<p>Phone: +120-1254678</p>
+		<p>Email: hotel@mail.com</p>
+		</section>
+		<form>
+			<p>
+				<input type="" name="Name" class="name" placeholder="Name">
+			</p>
+			<p>
+				<input type="" name="Email" class="formemail" placeholder="Email">
+			</p>
+			<p>
+				<input type="" name="Message" class="message" placeholder="Message">
+			</p>
+			<p>
+				<button class="buttonform" type="submit">SEND MESSAGE</button>
+			</p>
+		</form>
+	</section>
+	<div>
+		<footer class="footer">
+			<h5>Find Us At</h5>
+			<p id="footer">Knight Learning Solutions Pvt Ltd</p>
+			<p id="footer1">Noida, India</p>
+		</footer>
+	</div>
+	
+</div>
 </body>
 </html>
